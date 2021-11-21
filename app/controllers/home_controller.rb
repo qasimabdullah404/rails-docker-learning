@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
     def index
-        @message = "A static page.."
+        @message = "Time now is #{Time.now}"
         @posts = Post.all
     end
 
