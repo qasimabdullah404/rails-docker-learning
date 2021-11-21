@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2021_11_21_132205) do
     t.string "title"
     t.text "body"
     t.bigint "author_id", null: false
-    t.string "like_count_integer"
+    t.integer "likes_count"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["author_id"], name: "index_posts_on_author_id"
